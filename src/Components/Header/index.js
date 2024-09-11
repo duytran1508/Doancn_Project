@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
 import Logo from "../../assets/images/logo.jpg";
 import Button from "@mui/material/Button";
-import CountryDropdown from "../CountryDropdown";
-
 import { FiUser } from "react-icons/fi";
 import { IoBagOutline } from "react-icons/io5";
+import CountryDropdown from "../CountryDropdown";
 import SearchBox from "./SearchBox";
+import Navigation from "./Navigation";
+
 
 const Header = () => {
   return (
@@ -54,21 +55,8 @@ const Header = () => {
           </div>
         </header>
 
-        <nav>
-          <div className="container">
-            <div className="row">
-                <div className="col-sm-3 navPart1">
-                    <Button className="allCatTab">
-                        <span class= "text">ALL CATEGORIES</span>
-                    </Button>
-                </div>
+        <Navigation/>
 
-                <div className="col-sm-9 navPart2">
-                </div>
-
-            </div>
-          </div>
-        </nav>
       </div>
     </>
   );
